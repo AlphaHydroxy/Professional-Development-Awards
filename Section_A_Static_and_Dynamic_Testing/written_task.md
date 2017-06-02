@@ -11,6 +11,8 @@ def func1 val
   return false
   end
 end
+-line 8 should be == not =
+
   
 dif max a b
   if a > b
@@ -20,12 +22,14 @@ dif max a b
   end 
 end 
 end 
+-line 17 def not dif, a b should be in parenthesis
   
 def looper 
   for i in 1..10
   puts i
   end
 end
+-no argument passed
  
 failures = 0 
  
@@ -34,6 +38,10 @@ if looper == 10
 else
   puts "looper failed"
   failures = failures + 1
+
+-line 40 should be failures += 1 and conflicts with variable on line 34
+-no function defined
+-no end
  
   
 if func1(3) == false
@@ -42,6 +50,8 @@ else
   puts "func1(3) failed"
   failures = failures + 1
 end 
+-no function defined
+-variable on line 51 redundant
  
   
 if max(100,1) == 100 
@@ -50,12 +60,15 @@ else
   puts "func1(3) failed"
   failrues = failures + 1
 end
-
+-typo in line 58 "failures" not failrues
+-no method defined
   
 if failures 
   puts "Test Failed"
 else
   puts "Test Passed"
 end
+-no method defined
+-if statement unclear
 
 
